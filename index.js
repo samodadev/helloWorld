@@ -14,7 +14,7 @@ const server = http.createServer((req, res) => {
   const parsedUrl = url.parse(req.url);
   const path = parsedUrl.pathname;
 
-  //rougting
+  //routing
   switch (path) {
     case '/hello':
       const objToSend = {Hello: 'world'};
